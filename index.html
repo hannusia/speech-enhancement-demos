@@ -1,48 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Speech Enhancement Demos</title>
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 16px;
-    }
-    h2 {
-      margin-top: 32px;
-    }
-    .sample {
-      margin-bottom: 24px;
-    }
-    audio {
-      width: 100%;
-      margin-top: 8px;
-    }
-    .label {
-      font-weight: 600;
-      margin-top: 12px;
-    }
-  </style>
+
+  <!-- load your external css -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <h1>Speech Enhancement – Audio Samples</h1>
+  <p>Comparison of noisy, enhanced, and clean speech.</p>
 
-<h1>Speech Enhancement – Audio Samples</h1>
-<p>Comparison of noisy, enhanced, and clean speech.</p>
+  <!-- JS will render into this -->
+  <div id="samples"></div>
 
-<div class="sample">
-  <h2>Sample 1</h2>
-
-  <div class="label">Noisy</div>
-  <audio controls src="audio/p232_009_noisy.wav"></audio>
-
-  <div class="label">DCCRN</div>
-  <audio controls src="audio/p232_009_dccrn.wav"></audio>
-
-  <div class="label">SEGAN</div>
-  <audio controls src="audio/p232_009_segan.wav"></audio>
-</div>
-
+  <script src="samples.js"></script>
 </body>
 </html>
