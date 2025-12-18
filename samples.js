@@ -24,6 +24,7 @@ const snrData = [
 
 const fileTypes = [
   { label: 'Noisy', suffix: 'noisy' },
+  { label: 'Wiener', suffix: 'noisy_wiener' },
   { label: 'DCCRN', suffix: 'dccrn' },
   { label: 'SEGAN', suffix: 'segan' },
   { label: 'Wavenet', suffix: 'wavenet' },
